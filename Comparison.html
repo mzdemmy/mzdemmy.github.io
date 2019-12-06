@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- LANDING PAGE FOR WEB CHALLENGE -->
+<!-- COMPARISONS PAGE FOR WEB CHALLENGE -->
 <html lang="en">
 
 <head>
@@ -56,49 +56,41 @@
 
   <main>
     <div class="container-fluid">
-      <section class="row">
-        <div class="col-sm-12 col-md-8">
-          <article class="box-white">
-            <h1 class="description-header">Summary: Latitude vs. X</h1>
+      <section class="box-white">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="description-header">Comparison: Latitude vs. X</h1>
             <hr width="100%" size="3"> 
-            <image src="assets/fig1.png" class="landing-image"></image>
-            <p>The purpose of this project was to analyze how weather changes as you get 
-            closer to the equator. To accomplish this analysis, we first pulled data from
-            the OpenWeather Map API to assemble a dataset on over 500 cities </p>
-            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the
-            weazther vs latitude. Factors we looked at included: temperature, cloudiness, wind
-            speed, and humidity. This site provides the source data and visualizations created 
-            as part of the analysis, as well as explanations and descritpiosn of any trensand 
-            correlations witnessed.</p> 
-          </article> 
+            <p>Click any plot to get an in-depth analysis</p>
+          </div> 
         </div>
 
-        <!-- image navigation "Visualization" area -->  
-        <div class="col-sm-12 col-md-4"> 
-          <div class = "box-white">
-            <h1 class="imagenav-header">Visualizations</h1>
-            <hr width="100%" size="3"> 
-          
+        <!-- row 1 -->
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h2 align="center"> vs. Max Temperature</h2>
+            <a href="Vizualizations/MaxTemp.html"><image src="assets/fig1.png" class="description-image"></a>
+          </div>
+       
+          <div class="col-sm-12 col-md-6">
+            <h2 align="center"> vs. Humidity</h2>
+            <a href="Vizualizations/Humidity.html"><image src="assets/fig2.png" class="description-image"></a>
+          </div> 
+        </div> 
 
-          <!-- <div class="col-sm-12 col-md-2">  -->
-            <a href="Vizualizations/MaxTemp.html"><image src="assets/fig1.png" class="imagenav-pix"></a>
-            <a href="Vizualizations/Humidity.html"><image src="assets/fig2.png" class="imagenav-pix"></a>
-          <!-- </div>  -->
-          <!-- <div class="col-sm-12 col-md-2">  -->
-            <!-- <a href="Vizualizations/MaxTemp.html"><image src="assets/fig1.png" class="imagenav-pix"></a> -->
-            <!-- <a href="Vizualizations/Humidity.html"><image src="assets/fig2.png" class="imagenav-pix"></a> -->
-          <!-- </div>  -->
-          
-          <!-- <div class="col-sm-12 col-md-2">  -->
-            <a href="Vizualizations/Cloudiness.html"><image src="assets/fig3.png" class="imagenav-pix"></a>
-            <a href="Vizualizations/Wind_Speed.html"><image src="assets/fig4.png" class="imagenav-pix"></a>
-          <!-- </div> -->
-          <!-- <div class="col-sm-12 col-md-2">  -->
-              <!-- <a href="Vizualizations/Cloudiness.html"><image src="assets/fig3.png" class="imagenav-pix"></a> -->
-              <!-- <a href="Vizualizations/Wind_Speed.html"><image src="assets/fig4.png" class="imagenav-pix"></a> -->
+        <!-- row 2 -->
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h2 align="center"> vs. Cloudiness</h2>
+            <a href="Vizualizations/Cloudiness.html"><image src="assets/fig3.png" class="description-image"></a>
+          </div>  
+              
+          <div class="col-sm-12 col-md-6"">
+              <h2  align="center"> vs. Wind Speed</h2>
+              <a href="Vizualizations/Wind_Speed.html"><image src="assets/fig4.png" class="description-image"></a>
           </div>
         </div>
-      </section>
+      </section>  
     </div>  <!-- container -->
   </main>
 

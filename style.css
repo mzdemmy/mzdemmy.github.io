@@ -1,0 +1,189 @@
+/* Default styles */
+
+body { 
+  background: #f1f1f1;
+} 
+
+h2 {
+  font-size: 20px;
+  color: #20B2AA;
+  font-family:Georgia, times, "Times New Roman", serif;
+  font-weight: bold;
+  /* margin-left: 77px; */
+}
+
+/* Naviagation styles */
+.navbar-default {
+  background: white;
+  padding: 3px;
+  list-style-type: none;
+}
+
+/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+.navbar li {   
+  display: inline-block;
+  padding: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  /* border-radius: 3px; */
+} 
+
+* hover shading
+.navbar ul li a:hover{   
+  display: block;
+  cursor: white;
+} 
+
+/* Getting rid of the default link styles here */
+.navbar li a { 
+  color: #808080;
+  text-decoration: none;
+} 
+
+#landing-btn {
+  /* style */
+  padding: 8px;
+  margin-right: 0px;
+  margin-left: 90px;
+  background: #20B2AA;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: Gerogia, Times, "Times New Roman", serif;
+}
+
+/* Dropdown */
+#navbarDropdown {
+  padding: 8px;
+  background: #f1f1f1; 
+  color: black !important;
+  opacity: .9;
+  filter:aplpha(opacity-70);
+} 
+ 
+.box-white {
+  float: left;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  padding: 20px;
+  color: #808080;
+  background: white;
+  width: 100%;
+}
+
+/* for visualization pages - main frame style */
+.description-header {
+  margin-bottom: 20px;
+  font-family:Georgia, Times, "Times New Roman", serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: #20B2AA;
+}
+
+.landing-image {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin-top:20px;
+  margin-right: 20px;
+}
+
+.imagenav-header {
+  margin-bottom: 20px;
+  font-family:Georgia, Times, "Times New Roman", serif;
+  font-size: 23px;
+  font-weight: bold;
+  color: #20B2AA;
+}
+
+.imagenav-pix{
+  float: left;
+  /* display: block; */
+  width: 50%;
+  height: 50%;
+  padding: 5px;
+}
+
+.imagenav-pix-active{
+  float: left;
+  /* display: block; */
+  width: 50%;
+  height: 50%;
+  padding: 5px;
+  /* border: 1px solid#20B2AA; */
+  outline: 1px solid#20B2AA;
+}
+
+.description-image {
+  /* float: left; */
+  display: block;
+  width: 90%;
+  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:20px;
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 767px){ 
+/* Media query for description content */
+
+  .navbar-default .navbar-toggle .icon-bar {
+    border-color: #0c7bc0;
+  }  
+  .imagenav-pix {
+    white-space: nowrap;
+    width: 25%;
+    height: 25%;
+  }
+  .imagenav-pix-active{
+    white-space: nowrap;
+    width: 25%;
+    height: 25%;
+    border: .5px solid#20B2AA;
+  }
+  .description-image {
+    white-space: nowrap;
+  }
+  table {
+    width:100px;
+  }  
+}
+
+/* data table formating  */
+table {
+  table-layout: fixed;
+  width:100%; 
+  overflow: auto;
+}  
+th{
+  word-wrap: normal;
+  color: #808080;
+  padding:0 15px 0 15px;
+  overflow: hidden; 
+}
+tr{
+  border-bottom: 1pt solid slategray;
+  color:#808080;
+  text-align: right;
+}
+tr:nth-child(even) {
+  background-color: #eee;
+}
+tr:nth-child(odd) {
+  background-color: #fff;
+}
+td {
+  padding:0 15px 0 15px;
+  overflow: hidden; 
+} 
+td:nth-child(2) { /* 2nd column */ 
+  text-align: left; 
+}
+td:nth-child(4){ /* 4th column */ 
+  text-align: left; 
+}
+td:nth-child(5){ /* 5th column */ 
+  text-align: right; 
+}
